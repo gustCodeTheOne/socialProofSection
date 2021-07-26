@@ -1,4 +1,4 @@
-/* CSS STYLES VERSION 01 -----------------------------------------------------------------------*/
+/* CSS STYLES VERSION 04 -----------------------------------------------------------------------*/
 /* GENERAL PROPERTIES --------------------------------------------------------------------------*/
 * {
   margin: 0px;
@@ -19,8 +19,8 @@
 }
 
 body {
-  background-image: url("../images/bg-pattern-top-desktop.svg");
-  background-repeat: no-repeat;
+  background: url("../images/bg-pattern-top-desktop.svg") no-repeat left top,
+    url("../images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
 }
 /* END of general properties -------------------------------------------------------------------*/
 .content {
@@ -195,6 +195,10 @@ header {
   }
 }
 @media (max-width: 450px) {
+  body {
+    background: url("../images/bg-pattern-top-mobile.svg") no-repeat left top,
+      url("../images/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
+  }
   .info {
     width: 95%;
   }
